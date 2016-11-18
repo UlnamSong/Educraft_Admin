@@ -1,0 +1,55 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@drawable/listitem_bg">
+
+<ImageView
+    android:id="@+id/postThumb"
+    android:layout_width="60dp"
+    android:src="@drawable/set_icon"
+    android:scaleType="fitXY"
+    android:layout_height="60dp"
+    android:padding="2dp" />
+
+    <TextView
+        android:id="@+id/tv_notice_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="GALAXY FANTASY VR"
+        android:textIsSelectable="false"
+        android:textSize="18sp"
+        android:ellipsize="end"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/postThumb"
+        android:layout_marginStart="9dp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="미설치"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_notice_title"
+        android:layout_alignStart="@+id/tv_notice_title"
+        android:layout_marginTop="5dp"
+        android:id="@+id/isSetup_tv"
+        android:textSize="18sp"
+        android:textColor="#FFFF0000" />
+
+    <TextView
+        android:text="100P"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/app_point_tv"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="24sp"
+        android:textStyle="normal|bold" />
+
+</RelativeLayout>

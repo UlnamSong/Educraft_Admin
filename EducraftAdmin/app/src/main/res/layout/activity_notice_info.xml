@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_notice_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.itsnowball.educraftadmin.NoticeInfoActivity"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:text="제목"
+        android:layout_width="match_parent"
+        android:id="@+id/tvTitle"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text="공지사항 제목입니다"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/tvTitleContent"
+        android:padding="10dp" />
+
+    <TextView
+        android:text="내용"
+        android:layout_width="match_parent"
+        android:id="@+id/tvContent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:text="공지사항 내용입니다."
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/tvContentContent"
+        android:padding="10dp" />
+</LinearLayout>

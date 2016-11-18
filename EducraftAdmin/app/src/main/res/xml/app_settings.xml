@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:title="접속 계정 정보"
+        android:textSize="15dp">
+
+        <Preference
+            android:defaultValue="Mir"
+            android:key="userName"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="이름"
+            android:summary=""/>
+
+        <Preference
+            android:defaultValue="Mir"
+            android:key="userEmail"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="이메일"
+            android:summary=""/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="서비스 지원"
+        android:textSize="15dp">
+<!--
+        <Preference
+            android:defaultValue="Mir"
+            android:key="1_1Question"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="1:1 문의"
+            android:summary="">
+            <intent
+                android:targetClass="com.itsnowball.educraftadmin.InquireActivity"
+                android:targetPackage="com.itsnowball.educraftadmin" />
+        </Preference>
+-->
+        <Preference
+            android:defaultValue="Mir"
+            android:key="notice"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="공지사항"
+            android:summary="">
+
+            <intent
+                android:targetClass="com.itsnowball.educraftadmin.NoticeActivity"
+                android:targetPackage="com.itsnowball.educraftadmin" />
+
+        </Preference>
+
+        <Preference
+            android:title="회원 정보 수정">
+            <intent
+                android:targetClass="com.itsnowball.educraftadmin.AccountSettingActivity"
+                android:targetPackage="com.itsnowball.educraftadmin" />
+        </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="기타"
+        android:textSize="15dp">
+<!--
+        <Preference
+            android:title="소프트웨어 정보" >
+            <intent
+                android:targetClass="com.itsnowball.educraftadmin.SwinfoActivity"
+                android:targetPackage="com.itsnowball.educraftadmin" />
+        </Preference>
+-->
+        <Preference
+            android:title="서비스 이용 약관">
+            <intent
+                android:targetClass="com.itsnowball.educraftadmin.UsageagreeActivity"
+                android:targetPackage="com.itsnowball.educraftadmin" />
+        </Preference>
+
+        <Preference
+            android:title="개인정보 취급방침">
+            <intent
+                android:targetClass="com.itsnowball.educraftadmin.MemberagreeActivity"
+                android:targetPackage="com.itsnowball.educraftadmin" />
+        </Preference>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
